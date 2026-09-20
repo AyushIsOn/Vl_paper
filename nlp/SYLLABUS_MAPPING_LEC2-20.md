@@ -152,9 +152,11 @@ Note: the handout's lecture plan table starts at Lecture 2 — there is no Lectu
 | Lec | Topic | Status | Closest available |
 | --- | --- | --- | --- |
 | 18 | **Lexicon-Free FSTs** | **Not covered** | No PDF uses the term. In Jurafsky & Martin this is the **Porter stemmer** as a lexicon-free cascade of rules; `NLP-UNIT-1-notes` mentions Porter/Snowball/Lancaster only as stemmer names, not as FSTs. Use T1 Ch. 3.8. |
-| 6 | Acceptor/Transducer **"Categorization"** | **Weak** | Acceptor and transducer are both defined (ToC + `PPT-2`), but no PDF covers **Moore vs Mealy** machines or the acceptor/classifier/transducer/sequencer taxonomy. |
+| 6 | Acceptor/Transducer **"Categorization"** | **Covered** | `PPT-2` slides 27, 30, 31: "Recognition vs Analysis" (acceptor vs transducer), FSA 5-tuple ⟨Q,Σ,q₀,F,δ⟩ vs FST 7-tuple ⟨Q,Σ,Δ,q₀,F,δ,σ⟩. `PPT1` slides 15→18 show the same FSA→FST progression. **Note:** "Transducer" here means **FST**, per J&M Ch. 3 ("Words and Transducers") — *not* Moore/Mealy machines, which appear nowhere in the handout or in J&M. |
 | 5 | Overview of models and algorithms in NLP | **Weak** | `NLP-UNIT-1-notes` grammar types + statistical models. J&M's framing (state machines, formal rule systems, logic, probabilistic models) is not laid out anywhere. |
 | 3–4 | Knowledge in Speech & Language Processing | **Partial** | `NLP-UNIT-1-notes`' 7 linguistic levels substitutes for it, but J&M's explicit "six kinds of knowledge" list is absent. Ambiguity itself is well covered. |
 | 20 | **Sentence** tokenization | **Thin** | Only `NLP-UNIT-1-notes` treats it properly (boundary detection + abbreviations, decimals, ellipsis, quotes). `PPT -3` skips it entirely. Word tokenization is covered heavily by contrast. |
 
 **Strongest coverage:** Lec 8–10 (five overlapping sources) and Lec 11–17 (two dedicated decks).
+
+**Only real gap:** Lec 18 (Lexicon-Free FSTs → Porter stemmer as a rule cascade, T1 Ch. 3.8). Lec 5 and Lec 20-sentence-tokenization are thin but present.
